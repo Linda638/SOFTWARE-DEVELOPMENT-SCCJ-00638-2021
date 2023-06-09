@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To-Do List - Tasks</title>
+    <link rel="stylesheet" type="text/css" href="tasks.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <h1>To-Do List</h1>
+
+    <nav>
+        <ul class="navbar">
+          <li><a href="home.html">Home</a></li>
+          <li class="active"><a href="test.html">Tasks</a></li>
+          <li><a href="reminders.html">Reminders</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+    <div id="add-task-container" class="container">
+        <input type="text" id="task-input" placeholder="Enter task" required>
+        <button id="add-task-btn" class="add-btn" onclick="addTask()">Add Task</button>
+    </div>
+      
+    <ul id="task-list">
+      <li>
+        <div class="task-item">
+          <i class="fas fa-trash-alt delete-icon"></i>
+          <span class="task-text">Task 1</span>
+        </div>
+      </li>
+      <li>
+        <div class="task-item">
+          <i class="fas fa-trash-alt delete-icon"></i>
+          <span class="task-text">Task 2</span>
+        </div>
+      </li>
+      <li>
+        <div class="task-item">
+          <i class="fas fa-trash-alt delete-icon"></i>
+          <span class="task-text">Task 3</span>
+        </div>
+      </li>
+      <!-- Add more task items here -->
+    </ul>
+  </div>
+
+    <script src="tasks.js"></script>
+
+</body>
+</html>

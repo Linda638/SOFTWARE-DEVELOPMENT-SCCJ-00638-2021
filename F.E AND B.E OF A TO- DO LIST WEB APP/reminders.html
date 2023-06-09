@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>To-Do List - Reminders</title>
+  <link rel="stylesheet" type="text/css" href="reminders.css">
+
+</head>
+<body>
+  <h1>To-Do List</h1>
+
+  <nav>
+    <ul class="navbar">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="tasks.html">Tasks</a></li>
+      <li class="active"><a href="reminders.html">Reminders</a></li>
+    </ul>
+  </nav>
+
+  <div class="calendar-container">
+    <div class="calendar-header">
+      <button id="prevMonthBtn">&lt;</button>
+      <h2 id="currentMonth"></h2>
+      <button id="nextMonthBtn">&gt;</button>
+    </div>
+    <div class="calendar-grid" id="calendarGrid">
+     <div class="highlight-container"></div>
+     </div>
+  </div>
+
+  <ul id="remindersList" class="reminders-list"></ul>
+  
+
+  <script src="reminders.js"></script>
+</body>
+</html>
